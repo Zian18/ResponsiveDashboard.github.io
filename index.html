@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-amazon"></i></span>
+                        <span class="title">
+                            <h2>Brand Name</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-question"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-lock"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="search here">
+                        <i class="fas fa-search"></i>
+                    </label>
+
+                </div>
+                <div class="user">
+                    <img src="./images/user1.jpg">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">172</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$4,042</div>
+                        <div class="cardName">Earnings</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+
+         <div class="details">
+             <div class="recentOrders">
+                <div class="cardHeader">
+                    <h2>Recent Orders</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td> Name </td>
+                            <td> Price </td>
+                            <td> Payment </td>
+                            <td> Status </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gaming Laptop</td>
+                            <td>$800</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>Football Boots</td>
+                            <td>$200</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Hard Cover Books</td>
+                            <td>$100</td>
+                            <td>Due</td>
+                            <td><span class="status inprogress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>PlayStation 5</td>
+                            <td>$20</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr><tr>
+                            <td>Gaming Laptop</td>
+                            <td>$800</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>Football Boots</td>
+                            <td>$200</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Hard Cover Books</td>
+                            <td>$100</td>
+                            <td>Due</td>
+                            <td><span class="status inprogress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>PlayStation 5</td>
+                            <td>$20</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+             <div class="recentCustomers">
+                <div class="cardHeader">
+                    <h2>Recent Customers</h2>
+                    <!-- <a href="#" class="btn">View All</a> -->
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="60px"><div class='imgBx'><img src="./images/user2.jpg"></div></td>
+                            <td><h4>Attenborough<br><span>England</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class='imgBx'><img src="./images/user3.jpg"></div></td>
+                            <td><h4>Gerrard<br><span>England</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class='imgBx'><img src="./images/user4.jpg"></div></td>
+                            <td><h4>Black Panther<br><span>Wakanda</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class='imgBx'><img src="./images/user5.jpg"></div></td>
+                            <td><h4>Robert<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class='imgBx'><img src="./images/user6.jpg"></div></td>
+                            <td><h4>Sadio<br><span>Bangladesh</span></h4></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+
+        </div>
+
+    </div>
+    <script src="./db.js"></script>
+</body>
+
+</html>
